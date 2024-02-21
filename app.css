@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+body {
+    height: 100vh;
+    background-color: #6B778D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background-color: #fff;
+    padding: 25px  30px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .6s;
+}
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input {
+    width: 80%;
+    color: #404258;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-left: 40px;
+    border: none;
+    outline: none;
+}
+.search ::placeholder {
+    color: #C7C8CC;
+    font-size: 20px;
+    font-weight: 500;
+}
+.search button  {
+    width: 40px;
+    height: 40px;
+    color: #404258;
+    background-color: #AAD7D9;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.search button:hover {
+    color: #FBFADA;
+    background-color: #404258;
+}
+.search i {
+    position: absolute;
+    font-size: 24px;
+}
+.weather {
+    text-align: center;
+    margin-top: 30px;
+}
+.weather img {
+    width: 40%;
+    margin-top: 15px;
+}
+.weather .temp {
+    font-size: 4rem;
+    font-weight: 800;
+    position: relative;
+    color: #404258;
+    margin-top: 30px;
+    padding-left: -16px;
+}
+.weather .temp span {
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+.weather .city-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #404258;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+.details .humidity, .details .wind {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.details .humidity {
+    
+    justify-content: flex-start;
+}
+.details .wind {
+   
+    justify-content: flex-end;
+}
+.details i {
+    font-size: 20px;
+    color: #404258;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.details span {
+    color: #404258;
+    font-size: 22px;
+    font-weight: 500;
+}
+.details p{
+    color: #404258;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.error {
+    display: none;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
